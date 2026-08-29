@@ -1,50 +1,57 @@
 # Laptop Price Statistical Analysis
 
-Academic data analysis project focused on understanding laptop prices and technical characteristics through descriptive statistics, visualization, regression and probability analysis.
+Jupyter-based statistical analysis of laptop prices and technical characteristics using descriptive statistics, visualization, regression and probability methods.
+
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Jupyter](https://img.shields.io/badge/Jupyter-notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/) [![scikit--learn](https://img.shields.io/badge/scikit--learn-regression-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+
+> A compact analysis workflow for understanding price drivers and evaluating laptop value through statistical exploration.
 
 ## Research question
 
-How can the best value-for-money laptop be identified by considering key variables and applying statistical analysis, data visualization and a multi-criteria perspective?
+How can laptop value be explored by combining technical characteristics, descriptive statistics, visual analysis, regression and probability?
 
-## Analysis covered
+~~~mermaid
+flowchart LR
+ A[laptop_price.csv] --> B[Exploratory analysis]
+ B --> C[Regression models]
+ B --> D[Probability analysis]
+ C --> E[Interpretation]
+ D --> E
+~~~
 
-- Data loading and exploratory inspection
-- Descriptive statistics
-- Histograms, scatter plots, box plots and categorical visualizations
-- Correlation analysis
-- Linear regression
-- Polynomial / non-linear regression experiments
-- Probability distributions, including Poisson-related analysis
-- Statistical interpretation of laptop price, RAM, processor and other technical variables
+## Notebooks and methods
 
-## Technologies
+| Notebook | Focus |
+|---|---|
+| [01_exploratory_analysis.ipynb](notebooks/01_exploratory_analysis.ipynb) | Inspection, descriptive statistics and visual exploration |
+| [02_regression_models.ipynb](notebooks/02_regression_models.ipynb) | Linear and non-linear regression experiments |
+| [03_probability_analysis.ipynb](notebooks/03_probability_analysis.ipynb) | Probability and distribution analysis |
+| [supplement_probability_distributions.ipynb](notebooks/supplement_probability_distributions.ipynb) | Supplementary distributions |
 
-- Python
-- Jupyter / Google Colab
-- pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- SciPy
-- scikit-learn
-- statsmodels
+The notebooks cover histograms, scatter plots, box plots, categorical comparisons, correlation analysis, regression and probability distributions. The report is [docs/laptop_price_analysis_report.pdf](docs/laptop_price_analysis_report.pdf).
 
-## Repository structure
+## Stack
 
-- `notebooks/01_exploratory_analysis.ipynb`
-- `notebooks/02_regression_models.ipynb`
-- `notebooks/03_probability_analysis.ipynb`
-- `notebooks/supplement_probability_distributions.ipynb`
-- `docs/laptop_price_analysis_report.pdf`
+Python · Jupyter/Google Colab · pandas · NumPy · Matplotlib · Seaborn · SciPy · scikit-learn · statsmodels.
 
-The original Colab paths were adapted to a repository-relative path: `data/laptop_price.csv`. The dataset itself was not present in the uploaded archive, so it is not included here.
+## Reproduce locally
 
-## Academic context
+~~~bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+~~~
 
-Course: Probability and Statistics, Universidad de San Buenaventura.
+Place the dataset at data/laptop_price.csv and run the notebooks in the order above. The dataset is not included in the repository, so exact outputs cannot be regenerated from a clone alone.
 
-Project authored by Andres Felipe Obando Barriga with academic collaborators whose names are omitted for privacy.
+## Verified scope and limitations
 
-## Portfolio note
+Verified: four notebooks, exploratory/descriptive analysis, visualizations, correlation analysis, regression experiments and probability analysis. Not asserted: dataset size, final regression metrics or a single best laptop, because they are not published as a stable result artifact.
 
-This repository consolidates several course deliveries into one project so the evolution of the analysis is easier to review.
+## Related case study
+
+[Read the technical case study](https://andres-obando-portfolio-static.onrender.com/case-studies/laptop-price-statistical-analysis/)
+
+## Author
+
+**Andrés Obando** · [GitHub](https://github.com/cito515432) · [LinkedIn](https://www.linkedin.com/in/andres-obando-08095b203) · [Portfolio](https://andres-obando-portfolio-static.onrender.com/)
