@@ -23,9 +23,9 @@ flowchart LR
 
 These figures are extracted from outputs already embedded in the exploratory notebook.
 
-![Laptop price distribution from the exploratory analysis](docs/images/price-distribution.png)
+![Laptop price distribution from the regression notebook](docs/images/price-distribution.png)
 
-![Laptop price box plot from the exploratory analysis](docs/images/price-boxplot.png)
+![Laptop price box plot from the exploratory notebook](docs/images/price-boxplot.png)
 
 ## Notebooks and methods
 
